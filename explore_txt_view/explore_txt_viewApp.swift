@@ -1,17 +1,13 @@
-//
-//  explore_txt_viewApp.swift
-//  explore_txt_view
-//
-//  Created by admin on 2/21/26.
-//
-
 import SwiftUI
 
 @main
 struct explore_txt_viewApp: App {
+    @StateObject private var navigationState = NavigationState()
+    
     var body: some Scene {
-        DocumentGroup(newDocument: explore_txt_viewDocument()) { file in
-            ContentView(document: file.$document)
+        WindowGroup {
+            ContentView()
+                .environmentObject(navigationState)
         }
     }
 }

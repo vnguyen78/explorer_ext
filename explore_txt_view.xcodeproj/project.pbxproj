@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		213543C1882B86A4E45748CD /* marked_min.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED7D4E8B84FEC04ADAB97E01 /* marked_min.txt */; };
+		225C4334A1834BB10AAC6B14 /* marked_min.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED7D4E8B84FEC04ADAB97E01 /* marked_min.txt */; };
+		320D41758101157ECA467C30 /* marked_min.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED7D4E8B84FEC04ADAB97E01 /* marked_min.txt */; };
+		4669498C8644E616E111714C /* mermaid_min.txt in Resources */ = {isa = PBXBuildFile; fileRef = 025440628E88D51C5C7D1FDF /* mermaid_min.txt */; };
+		BD6944E28BEB58EDB3991AB2 /* mermaid_min.txt in Resources */ = {isa = PBXBuildFile; fileRef = 025440628E88D51C5C7D1FDF /* mermaid_min.txt */; };
+		DE11447A834A4253BA894468 /* mermaid_min.txt in Resources */ = {isa = PBXBuildFile; fileRef = 025440628E88D51C5C7D1FDF /* mermaid_min.txt */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		84EFA5FB2F4961ED00163347 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		025440628E88D51C5C7D1FDF /* mermaid_min.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = mermaid_min.txt; path = explore_txt_view/mermaid_min.txt; sourceTree = SOURCE_ROOT; };
 		84EFA5EA2F4961EB00163347 /* explore_txt_view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = explore_txt_view.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EFA5FA2F4961ED00163347 /* explore_txt_viewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = explore_txt_viewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EFA6042F4961ED00163347 /* explore_txt_viewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = explore_txt_viewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7D4E8B84FEC04ADAB97E01 /* marked_min.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = marked_min.txt; path = explore_txt_view/marked_min.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -92,6 +103,8 @@
 				84EFA5FD2F4961ED00163347 /* explore_txt_viewTests */,
 				84EFA6072F4961ED00163347 /* explore_txt_viewUITests */,
 				84EFA5EB2F4961EB00163347 /* Products */,
+				ED7D4E8B84FEC04ADAB97E01 /* marked_min.txt */,
+				025440628E88D51C5C7D1FDF /* mermaid_min.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225C4334A1834BB10AAC6B14 /* marked_min.txt in Resources */,
+				4669498C8644E616E111714C /* mermaid_min.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320D41758101157ECA467C30 /* marked_min.txt in Resources */,
+				BD6944E28BEB58EDB3991AB2 /* mermaid_min.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213543C1882B86A4E45748CD /* marked_min.txt in Resources */,
+				DE11447A834A4253BA894468 /* mermaid_min.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +306,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = explore_txt_view/Info.plist;
@@ -318,11 +349,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = explore_txt_view/Info.plist;
