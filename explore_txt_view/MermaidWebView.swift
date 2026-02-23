@@ -10,6 +10,7 @@ struct MermaidWebView: NSViewRepresentable {
         
         let configuration = WKWebViewConfiguration()
         configuration.defaultWebpagePreferences = preferences
+        configuration.websiteDataStore = .nonPersistent()
         
         // Safety check for Private API keys
         if configuration.preferences.responds(to: NSSelectorFromString("setAllowFileAccessFromFileURLs:")) {
@@ -148,5 +149,15 @@ struct MermaidWebView: NSViewRepresentable {
         """
         let baseURL = MermaidAssetManager.shared.appCacheDir
         webView.loadHTMLString(htmlContent, baseURL: baseURL)
+    }
+    
+    static func dismantleNSView(_ webView: WKWebView, coordinator: ()) {
+        webView.stopLoading()
+        webView.configuration.userContentController.removeAllUserScripts()
+        if #available(macOS 11.0, *) {
+            webView.configuration.userContentController.removeAllScriptMessageHandlers()
+        }
+        webView.navigationDelegate = nil
+        webView.uiDelegate = nil
     }
 }
